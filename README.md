@@ -25,4 +25,13 @@ test code from other exercises.
 ## Runtime Analysis
 
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
-answer, including your reasoning, to this markdown file.
+answer, including your reasoning, to this markdown file.  
+
+**NOTE**:  
+Same as the last few times, I've simply updated the code and will come back to the  
+testing and recurrence analysis later. The code seems to be fully functional, but  
+I will check that with test cases when I get a chance. Please note that the reason  
+I'm doing all the code first for all these assignments is so that I can "get into a  
+groove" so to speak when it comes to completing them. By doing the code for the graphing  
+assignments back to back, it keeps the information fresh in my mind. I plan to do the  
+same thing with the tests and recurrence analyses.

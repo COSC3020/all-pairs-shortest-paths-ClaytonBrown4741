@@ -1,8 +1,8 @@
 function allPairsShortestPaths(graph) {
-	var distances = []
+	var distances = {}
 	var graphKeys=Object.keys(graph)
 	for (var i=0; i<graphKeys.length; i++){
-		distances[graphKeys[i]] = [];
+		distances[graphKeys[i]] = {};
 		for (var j=0; j<graphKeys.length; j++){
 			distances[graphKeys[i]][graphKeys[j]]=Infinity
 			if (i==j){
@@ -31,9 +31,9 @@ function allPairsShortestPaths(graph) {
 	return distances;
 }
 
-var agraph = {'foo': {'boo': 7, 'd': 4},
-    'boo': {'e': 3},
-    'd': {'bar': 4},
-    'e': {'foo': 1},
-    'bar': {'foo': 2}};
-console.log(allPairsShortestPaths(agraph))
+var agraph = {'foo': {'boo': 7, 'd': 7, 'e': 7, 'bar': 7},
+    'boo': {},
+    'd': {},
+    'e': {},
+    'bar': {}};
+//console.log(allPairsShortestPaths(agraph))

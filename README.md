@@ -27,5 +27,17 @@ test code from other exercises.
 What is the worst-case time complexity ($\Theta$) of the algorithm? Add your
 answer, including your reasoning, to this markdown file.  
 
-**NOTE**:  
-AUTOMATIC TESTS HAVE BEEN ADDED. I WILL ADD THE RUNTIME ANALYSIS SOON.
+**ANSWER**:  
+To find the worst-case time complexity, we must first look at the steps that were  
+taken. First off, we had to initialize a |V|*|V| matrix so that every slot contained  
+infinity. This, of course, will take $|V|^2$ amount of time. While we do that, we also  
+go ahead and turn the necessary vertexes into 0's, so that saves us a bit of time.  
+Next up, we have to go through and initialize every edge that we currently have.  
+Because we have to go through every single edge in order to do so, this will take  
+|E| amount of time. Finally, we have the last for loops. This is a triple nested for  
+loop, and each loop goes through every single one of the vertexes. As a result, this  
+will take $|V|^3$ amount of time to complete.  
+So, if we take all this info together, we find that the worst case runtime for this  
+code would be $\Theta(|V|^2 + |E| + |V|^3)$ which simplified turns out to be  
+$\Theta(|E| + |V|^3)$  
+Please let me know if my logic was off at all, and I will readily fix it. Thank you!

@@ -39,5 +39,8 @@ loop, and each loop goes through every single one of the vertexes. As a result, 
 will take $|V|^3$ amount of time to complete.  
 So, if we take all this info together, we find that the worst case runtime for this  
 code would be $\Theta(|V|^2 + |E| + |V|^3)$ which simplified turns out to be  
-$\Theta(|E| + |V|^3)$  
+$\Theta(|E| + |V|^3)$. However, this leads to an interesting exception... Because  
+|E| can only ever be at *most* $|V|^2$, that means that it has no choice but to  
+be a lower order term in this case. As a result, it goes away due to it being  
+asymptotically insignificant and we get a true final answer of $\Theta(|V|^3)$  
 Please let me know if my logic was off at all, and I will readily fix it. Thank you!

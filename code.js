@@ -30,10 +30,3 @@ function allPairsShortestPaths(graph) {
 
 	return distances;
 }
-
-var agraph = {'foo': {'boo': 7, 'd': 7, 'e': 7, 'bar': 7},
-    'boo': {},
-    'd': {},
-    'e': {},
-    'bar': {}};
-//console.log(allPairsShortestPaths(agraph))
